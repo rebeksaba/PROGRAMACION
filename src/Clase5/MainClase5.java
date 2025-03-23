@@ -10,16 +10,16 @@ public class MainClase5 {
         //System.out.println("Dame un número");
         //int numero = scanner.nextInt();// con esto, leo el número del usuario
 
-        //Estructura del if-else
-        //if (numero > 0) {
-        System.out.println("El número es positivo");
-        //} else if (numero < 0) {
-        System.out.println("El número es negativo");
-        //} else {
-        System.out.println("El número es cero");
-        // }
-        // scanner.close();// cierra el scanner.
-        //  }
+//        //Estructura del if-else
+//        //if (numero > 0) {
+//        System.out.println("El número es positivo");
+//        //} else if (numero < 0) {
+//        System.out.println("El número es negativo");
+//        //} else {
+//        System.out.println("El número es cero");
+//        // }
+//        // scanner.close();// cierra el scanner.
+//        //  }
 
 //}
 
@@ -85,18 +85,49 @@ public class MainClase5 {
         //Ejercicio 5.
         //Pide contraseña y que no pueda entrar el usuaario hasta que ponga java123
 
-        Scanner scanner = new Scanner(System.in);
-        String password;
+//        Scanner scanner = new Scanner(System.in);
+//        String password;
 
         //Bucle do-while
 
-        do {
-            System.out.println("Introduce tu contraseña:");
-            password = scanner.nextLine();
-        }while (!password.equals("java123"));
+//        do {
+//            System.out.println("Introduce tu contraseña:");
+//            password = scanner.nextLine();
+//        }while (!password.equals("java123"));
+//
+//        System.out.println("Acceso concedido");
+//        scanner.close();
 
-        System.out.println("Acceso concedido");
-        scanner.close();
+      //EJERCICIOS EXTRA
+
+      //EJERCICIO 1: Clasificación de edad.
+        // Pide al usuario su edad e imprime si es menor de edad, adulto o adulto mayor.
+
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Dime tu edad");
+//        int edad = scanner.nextInt(); // Con esto, leo la edad del usuario
+//
+//        if (edad < 18) {
+//            System.out.println("Eres menor de edad");
+//        } else if (edad >= 18 && edad < 50) {
+//            System.out.println("Eres adulto");
+//        } else if (edad >= 50) {
+//            System.out.println("Eres adulto mayor");
+//        }
+//
+//        scanner.close(); // Cierra el scanner
+
+
+        //EJERCICIO 2: Contador de vocales.
+          //Pide al usuario una palabra y cuenta cuántas vocales tiene.
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Escribe una palabra");
+
+
+
 
     }
 
