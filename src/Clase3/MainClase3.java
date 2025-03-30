@@ -26,7 +26,7 @@ public class MainClase3 {
         System.out.println("Numero original en int: " + numeroGrande);
         System.out.println("Numero convertido a byte: " +numeroPequeño);
 
-     //4. COnversión de String a int con Integer.parseInt()
+     //4. Conversión de String a int con Integer.parseInt()
 
      String texto = "123";
      int numero = Integer.parseInt(texto);
