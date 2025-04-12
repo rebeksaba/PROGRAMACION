@@ -1,6 +1,6 @@
-package Clase2;
+package Clase1y2;
 
-import java.sql.SQLOutput;
+import java.util.Scanner;
 
 public class MainClase2 {
     public static void main(String[] args) {
@@ -166,11 +166,27 @@ public class MainClase2 {
         final double TASA_CAMBIO = 1.12;
 
 
+                Scanner scanner = new Scanner(System.in);
+
+                // Solicitar al usuario la cantidad en dólares
+                System.out.print("Ingrese la cantidad en dólares: ");
+                double dolares = scanner.nextDouble();
+
+                // Convertir a euros
+                double euros = dolares / TASA_CAMBIO;
+
+                // Mostrar el resultado
+                System.out.printf("La cantidad en euros es: %.2f%n", euros);
+
+                scanner.close();
+            }
+        }
 
 
 
 
 
 
-    }
-}
+
+
+

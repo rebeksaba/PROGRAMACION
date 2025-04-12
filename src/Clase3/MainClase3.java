@@ -71,7 +71,7 @@ public class MainClase3 {
     //Convertir del long al int
     int numeroEnterito = (int) numeroLargo;
 
-        System.out.println("Numero con cambio de long a int: " + numeroEnterito);
+        System.out.println("Número con cambio de long a int: " + numeroEnterito);
 
 
 

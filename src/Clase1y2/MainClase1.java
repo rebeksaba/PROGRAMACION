@@ -1,4 +1,4 @@
-package Clase2;
+package Clase1y2;
 
 public class MainClase1 {
     public static void main(String[] args) {
@@ -113,6 +113,11 @@ public class MainClase1 {
     // 📌 EJERCICIO 7:
     // Usa literales para imprimir en consola:
     // Un número entero, un decimal, un booleano y una cadena de texto.
+
+        System.out.println(180); //entero
+        System.out.println(1.80); //decimal
+        System.out.println(true);  //booleano
+        System.out.println("Hola gente"); //cadena
 
     // =====================================================
     // 📌 CONCLUSIÓN 📌

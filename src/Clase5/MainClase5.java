@@ -1,135 +1,113 @@
-package Clase5;
+import java.util.Scanner;
 
-import java.util.Scanner;// sin esto no vas a poder pedirle al usuario algún dato
+public class Clase5 {
 
-public class MainClase5 {
     public static void main(String[] args) {
 
+        //🟨 Ejercicio 1 – Salir de un bucle while con break
+        //Haz un programa que pida al usuario números enteros positivos.
+        //El programa debe terminar cuando el usuario introduzca el número 0.
+        // Usa un bucle while con break.
 
-        //Scanner scanner = new Scanner(System.in);
-        //System.out.println("Dame un número");
-        //int numero = scanner.nextInt();// con esto, leo el número del usuario
+        Scanner sc = new Scanner(System.in);
+        int numero;
 
-//        //Estructura del if-else
-//        //if (numero > 0) {
-//        System.out.println("El número es positivo");
-//        //} else if (numero < 0) {
-//        System.out.println("El número es negativo");
-//        //} else {
-//        System.out.println("El número es cero");
-//        // }
-//        // scanner.close();// cierra el scanner.
-//        //  }
+        while(true){
+            System.out.println("Introduce un número y pon un 0 para salir");
+            numero = sc.nextInt();
+            if (numero == 0){
+                //Si es 0, como pide el enunciado, salgo del bucle
+                break;
+            }
+            System.out.println("Has introducido:" + numero);
+        }
+        System.out.println("Programa finalizado");
+        sc.close();
 
-//}
 
-//2. Créame un menú interactivo donde el usuario eloja una opción y muetre un
+        //🟨 Ejercicio 2 – Saltarse los múltiplos de 3 con continue
+        //Escribe un programa que muestre los números del 1 al 10,
+        // excepto los múltiplos de 3.
+        // Usa un bucle for con continue.
 
-//        Scanner scanner = new Scanner(System.in);
-//
-//Menú de opciones
-//        System.out.println("*Menú de opciones*");
-//        System.out.println("1. Saludar");
-//        System.out.println("2. Mensaje motivacional");
-//        System.out.println("3. Salir");
-//
-//        System.out.println("Selecciona una opción");
-//        int opcion = scanner.nextInt();//Leermos la opción del usuario
-//
-//
-//        //Evaluar opciones con el switch
-//        switch (opcion){
-//            case 1:
-//                System.out.println("Hola, bienvenido");
-//                break;
-//            case 2:
-//                System.out.println("Bro, esto es masivo!");
-//                break;
-//            case 3:
-//                System.out.println("Saliendo del programa");
-//                break;
-//            default:
-//                System.out.println("Macho, me has dado algo que no entiendo");
-//        }
-//        scanner.close();
+        //Recorrer ese intervalo de números.
+        for (int i = 1;i<=10;i++){
+            if (i%3 == 0){
+                //Si es múltiplo de 3, sáltame
+                continue;
 
-        //Imprimir los números del 1 al 10 con un for
-        //Usar un bucle para contar del 1 al 10
-//            for (int i=1;i<=10;i++){
-//                System.out.println("Numero: " + i);
-//                //Así muestro cada interacción
-//            }
+            }
+            System.out.println(i);
+        }
 
-        //Ejercicio 4.
-        //Usa el while para pedir numeros hasta que ponga 0
+        //🟨 Ejercicio 3 – Finalizar un bucle for al encontrar un número concreto
+        //Haz un programa que busque el número 7 entre los números del 1 al 20.
+        // Cuando lo encuentre, debe mostrar un mensaje y terminar el bucle con break.
 
-//        Scanner scanner = new Scanner(System.in);
-//        int numero;
-//
-//        System.out.println("Dame un número y pon 0 para salir");
-//        numero = scanner.nextInt();
-//        //Mientras que no sea 0 sigue pidiendo
-//
-//        while(numero!=0){
-//            System.out.println("Has introducido: " + numero);
-//            System.out.println("Introduce otro numero.");
-//            numero = scanner.nextInt();
-//
-//        }
-//        System.out.println("Programa finalizado.");
-//        scanner.close();
+        for (int i= 1;i<=20;i++) {
+            if (i == 7) {
+                System.out.println("Has encontrado el número 7!");
+                break;
+
+            }
+            System.out.println("Probando qué se ve con: " + i);
+        }
+
+
+        //🟨 Ejercicio 4 – Evitar mostrar letras vocales con continue
+        //Muestra las letras de la palabra "PROGRAMACION",
+        //pero omite las vocales usando continue.
+
+
+        String palabra = "PROGRAMACION";
+        for (int i =0; i<palabra.length();i++){
+            char letra = palabra.charAt(i);
+
+            if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U'){
+                //Saltar las vocales
+                continue;
+
+            }
+            System.out.println(letra);
+        }
+
+
+        //🟨 Ejercicio 5 – Dividir dos números con try-catch
+        //Haz un programa que divida dos números enteros introducidos por el usuario.
+        //Usa try-catch para evitar que el programa se rompa si el divisor es 0.
 
 
 
 
-        //Ejercicio 5.
-        //Pide contraseña y que no pueda entrar el usuaario hasta que ponga java123
-
-//        Scanner scanner = new Scanner(System.in);
-//        String password;
-
-        //Bucle do-while
-
-//        do {
-//            System.out.println("Introduce tu contraseña:");
-//            password = scanner.nextLine();
-//        }while (!password.equals("java123"));
-//
-//        System.out.println("Acceso concedido");
-//        scanner.close();
-
-      //EJERCICIOS EXTRA
-
-      //EJERCICIO 1: Clasificación de edad.
-        // Pide al usuario su edad e imprime si es menor de edad, adulto o adulto mayor.
-
-//        Scanner scanner = new Scanner(System.in);
-//
-//        System.out.println("Dime tu edad");
-//        int edad = scanner.nextInt(); // Con esto, leo la edad del usuario
-//
-//        if (edad < 18) {
-//            System.out.println("Eres menor de edad");
-//        } else if (edad >= 18 && edad < 50) {
-//            System.out.println("Eres adulto");
-//        } else if (edad >= 50) {
-//            System.out.println("Eres adulto mayor");
-//        }
-//
-//        scanner.close(); // Cierra el scanner
+        //🟨 Ejercicio 6 – Acceder a una posición no válida de una cadena (charAt)
+        // con control de excepción.
+        //Solicita una palabra al usuario y pide una posición.
+        //Intenta mostrar el carácter en esa posición usando try-catch.
+        // Si se produce un error, muestra un mensaje.
 
 
-        //EJERCICIO 2: Contador de vocales.
-          //Pide al usuario una palabra y cuenta cuántas vocales tiene.
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Escribe una palabra");
+        //🟨 Ejercicio 7 – Mensaje de fin con finally
+        //Haz un programa que intente dividir dos números.
+        //Usa try-catch-finally para mostrar siempre un mensaje final que diga
+        //"Operación terminada".
 
 
 
+        //🟨 Ejercicio 8 – Leer números y sumar los positivos,
+        // ignorando los negativos con continue.
+        //Pide al usuario 5 números enteros.
+        //Suma solo los positivos usando continue para ignorar los negativos.
 
-    }
 
-}
 
+        //🟨 Ejercicio 9 – Detectar si se ha introducido texto en lugar
+        //de número (try-catch)
+        //Pide al usuario que introduzca un número.
+        //Si escribe una palabra u otro texto, el programa debe capturar
+        //la excepción y mostrar "Eso no es un número".
+
+
+        //🟨 Ejercicio 10 – Salir de un bucle do-while
+        //cuando se adivina un número secreto
+        //Crea un número secreto entre 1 y 10. El usuario tiene que adivinarlo.
+        //Usa do-while y break para salir cuando acierte.
