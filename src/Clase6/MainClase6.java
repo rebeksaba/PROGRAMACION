@@ -118,35 +118,56 @@ public class MainClase6 {
         //Objetivo: Añadir manejo de NumberFormatException al convertir texto a número.
         //Instrucción: Añade manejo de NumerFormatException y un finally que diga "Juego finalizado".
 
-        Random random = new Random();
-        int secreto = random.nextInt(10) + 1;
+//        Random random = new Random();
+//        int secreto = random.nextInt(10) + 1;
+//
+//        Scanner sc4 = new Scanner(System.in);
+//        System.out.println("Adivina el número (1-10): ");
+//
+//        String intentoTexto = sc4.nextLine();
+//        int intento = Integer.parseInt(intentoTexto);
+//
+//
+//        try {
+//
+//
+//            intento = Integer.parseInt(intentoTexto);
+//
+//            if (intento == secreto) {
+//                System.out.println("Correcto!");
+//
+//            }
+//        }catch (NumberFormatException e) {
+//            System.out.println("Tienes que introducir un número");
+//
+//
+//
+//        }finally {
+//                System.out.println("Juego Finalizado");
+//        }
+//
+//        sc4.close();
 
-        Scanner sc4 = new Scanner(System.in);
-        System.out.println("Adivina el número (1-10): ");
 
-        String intentoTexto = sc4.nextLine();
-        int intento = Integer.parseInt(intentoTexto);
 
+        //EJERCICIO 5. Longitud de un nombre
+        //Objetivo: Añadir manejo de NullPointerException
+        //Instrucción: Usa try-catch para evitar que el programa se detenga si nombre es null.
+
+            String nombre = null;
 
         try {
 
-
-            intento = Integer.parseInt(intentoTexto);
-
-            if (intento == secreto) {
-                System.out.println("Correcto!");
+            if (nombre == null) {
+             throw new NullPointerException();
 
             }
-        }catch (NumberFormatException e) {
-            System.out.println("Tienes que introducir un número");
-
-
-
+            System.out.println("La longitud del nombre es: " + nombre.length());
+        }catch (NullPointerException e) {
+            System.out.println("Tienes que introducir un nombre válido.");
         }finally {
-                System.out.println("Juego Finalizado");
+            System.out.println("Fin");
         }
-
-        sc4.close();
 
 
     }
