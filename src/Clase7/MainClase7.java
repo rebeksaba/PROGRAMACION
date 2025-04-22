@@ -41,11 +41,6 @@ public class MainClase7 {
 
         Arrays.stream(numeros).forEach( num -> System.out.println("Elemento: " + num ) ); //Esto es una biblioteca que te permite recorrer un vector sin necesidad de usar un for each
 
-
-    //2. Sumar elementos
-        //Suma todos los valores de un array de enteros y muestra el total.
-
-
-
+        sc.close();
     }
 }
