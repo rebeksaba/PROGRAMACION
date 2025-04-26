@@ -92,7 +92,7 @@ public class MainClase7 {
     int [] arraynum4 = {3,15,74,46,100};
 
         System.out.println("Introduce un número: ");
-        int
+
 
 
 
