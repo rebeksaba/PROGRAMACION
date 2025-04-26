@@ -5,9 +5,9 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class MainClase6 {
-
-    public static void main(String[] args) {
+//public class MainClase6 {
+//
+//    public static void main(String[] args) {
 
 //        Scanner scanner = new Scanner(System.in);
 //
@@ -154,26 +154,26 @@ public class MainClase6 {
         //Objetivo: Añadir manejo de NullPointerException
         //Instrucción: Usa try-catch para evitar que el programa se detenga si nombre es null.
 
-            String nombre = null;
-
-        try {
-
-            if (nombre == null) {
-             throw new NullPointerException();
-
-            }
-            System.out.println("La longitud del nombre es: " + nombre.length());
-        }catch (NullPointerException e) {
-            System.out.println("Tienes que introducir un nombre válido.");
-        }finally {
-            System.out.println("Fin");
-        }
-
-
-    }
-
-}
-
+//            String nombre = null;
+//
+//        try {
+//
+//            if (nombre == null) {
+//             throw new NullPointerException();
+//
+//            }
+//            System.out.println("La longitud del nombre es: " + nombre.length());
+//        }catch (NullPointerException e) {
+//            System.out.println("Tienes que introducir un nombre válido.");
+//        }finally {
+//            System.out.println("Fin");
+//        }
+//
+//
+//    }
+//
+//}
+//
 
 
 
