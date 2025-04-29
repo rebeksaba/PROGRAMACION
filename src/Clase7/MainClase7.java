@@ -89,9 +89,39 @@ public class MainClase7 {
     //Pide al usuario un número y muéstra si está presente en un array, y en qué posición.
 
     Scanner scanner4 = new Scanner(System.in);
-    int [] arraynum4 = {3,15,74,46,100};
+    int [] arraynum4 = {3, 15, 74, 46, 100};
 
         System.out.println("Introduce un número: ");
+        int buscado = scanner4.nextInt();
+
+        boolean encontrado = false ;
+
+        for (int i = 0; i <arraynum4.length; i++) {
+
+            if (arraynum4 [i] == buscado){
+                System.out.println("El número " + buscado + "está en la posición: "+ (i +1));
+                encontrado = true;
+                break;
+            }
+        }
+
+        if (!encontrado){
+            System.out.println("tu número no está en la lista");
+        }
+        scanner4.close();
+
+    //Ejercicio 5. Ordenar el array
+    //Declara un array con números desordenados y ordénalo de menor a mayor utilizando Array.sort().
+
+        int [] arraynum5 = {5, 9, 6, 10, 2};
+
+        Arrays.sort(arraynum5);
+
+        for (int num : arraynum5){
+            System.out.println(num);
+    }
+
+
 
 
 
