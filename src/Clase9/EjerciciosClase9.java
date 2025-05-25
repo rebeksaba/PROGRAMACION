@@ -311,6 +311,83 @@ public class EjerciciosClase9 {
 
 
 
+        //4. Modificar un elemento en una lista interna:
+        //Crea un ArrayList<ArrayList<String>> con listas internas representando productos y sus precios.
+        //Permite modificar el precio de un producto y luego imprime la lista de productos actualizada.
+
+//        ArrayList<ArrayList<String>> stock = new ArrayList<>();
+//
+//        ArrayList<String> productos = new ArrayList<>();
+//
+//        productos.add("Teclados");
+//        productos.add("Pantallas");
+//        productos.add("Cargadores");
+//        productos.add("Memorias");
+//        productos.add("Discos");
+//        productos.add("Adaptadores");
+//
+//        stock.add(productos);
+//
+//        ArrayList<Double> precios = new ArrayList<>();
+//
+//        precios.add(25.0);
+//        precios.add(60.0);
+//        precios.add(15.0);
+//        precios.add(20.0);
+//        precios.add(42.0);
+//        precios.add(10.0);
+//
+//        stock.add(precios);
+
+        //no sé como seguir :`(
+
+
+        //5. Sumar valores de una lista de listas:
+        //Crea un ArrayList<ArrayList<Integer>> que contenga varias listas con números.
+        //Suma todos los números dentro de las listas internas y muestra el resultado total.
+
+        ArrayList<ArrayList<Integer>> lista_principal = new ArrayList<>();
+
+        ArrayList<Integer> lista1 =new ArrayList<>();
+
+        lista1.add(20);
+        lista1.add(50);
+        lista1.add(43);
+        lista1.add(98);
+        lista1.add(61);
+
+        lista_principal.add(lista1);
+
+        ArrayList<Integer> lista2 = new ArrayList<>();
+
+        lista2.add(5);
+        lista2.add(7);
+        lista2.add(9);
+        lista2.add(3);
+        lista2.add(8);
+
+        lista_principal.add(lista2);
+
+        ArrayList<Integer> lista3 = new ArrayList<>();
+
+        lista3.add(100);
+        lista3.add(200);
+        lista3.add(300);
+        lista3.add(400);
+        lista3.add(500);
+
+        lista_principal.add(lista3);
+
+        int total = 0;
+
+        for (ArrayList<Integer> lista : lista_principal){
+            for (Integer numero : lista) {
+                total += numero;
+            }
+
+        }
+        System.out.println("La suma total es: " + total);
+
 
 
 
