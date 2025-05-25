@@ -54,7 +54,7 @@ public class EjerciciosClase9 {
 
                 matrizAleatoria[i][j] = random.nextInt(100) + 1;
 
-                System.out.print(matrizAleatoria[i][j] + " ");
+                System.out.print(matrizAleatoria[i][j] + "\t");
 
             }
             System.out.println();
