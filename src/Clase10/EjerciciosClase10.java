@@ -50,7 +50,7 @@ public class EjerciciosClase10 {
         capitales.put("Marruecos", "Rabat");
         capitales.put("Egipto", "El Cairo");
         capitales.put("Estados Unidos", "Washington D.C.");
-        capitales.put("Canadá", "Ontario");
+        capitales.put("Canadá", "Otawa");
         capitales.put("Colombia", "Bogotá");
         capitales.put("Argentina", "Buenos Aires");
         capitales.put("China", "Pekín");

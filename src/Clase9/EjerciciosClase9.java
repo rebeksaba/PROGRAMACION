@@ -315,31 +315,49 @@ public class EjerciciosClase9 {
         //Crea un ArrayList<ArrayList<String>> con listas internas representando productos y sus precios.
         //Permite modificar el precio de un producto y luego imprime la lista de productos actualizada.
 
-//        ArrayList<ArrayList<String>> stock = new ArrayList<>();
-//
-//        ArrayList<String> productos = new ArrayList<>();
-//
-//        productos.add("Teclados");
-//        productos.add("Pantallas");
-//        productos.add("Cargadores");
-//        productos.add("Memorias");
-//        productos.add("Discos");
-//        productos.add("Adaptadores");
-//
-//        stock.add(productos);
-//
-//        ArrayList<Double> precios = new ArrayList<>();
-//
-//        precios.add(25.0);
-//        precios.add(60.0);
-//        precios.add(15.0);
-//        precios.add(20.0);
-//        precios.add(42.0);
-//        precios.add(10.0);
-//
-//        stock.add(precios);
+        ArrayList<ArrayList<Object>> stock = new ArrayList<>();
 
-        //no sé como seguir :`(
+        ArrayList<Object> producto1 = new ArrayList<>();
+
+        producto1.add("Teclado");
+        producto1.add(25.0);
+        stock.add(producto1);
+
+
+        ArrayList<Object> producto2 = new ArrayList<>();
+        producto2.add("Pantalla");
+        producto2.add(60.0);
+        stock.add(producto2);
+
+
+        // Modificar precio
+        Scanner scanner4 = new Scanner(System.in);
+        System.out.print("Introduce el nombre del producto a modificar: ");
+        String productoBuscar = scanner4.next();
+
+        boolean encontrado = false;
+        for (ArrayList<Object> prod : stock) {
+            if (prod.get(0).equals(productoBuscar)) {
+                System.out.print("Introduce el nuevo precio: ");
+                double nuevoPrecio = scanner4.nextDouble();
+                scanner4.next();
+                prod.set(1, nuevoPrecio);
+                encontrado = true;
+                break;
+            }
+        }
+        if (!encontrado) {
+            System.out.println("Producto no encontrado.");
+        }
+
+        // Mostrar productos
+        for (ArrayList<Object> prod : stock) {
+            System.out.println("Producto: " + prod.get(0) + " | Precio: " + prod.get(1));
+        }
+
+        scanner4.close();
+
+
 
 
         //5. Sumar valores de una lista de listas:
@@ -387,16 +405,6 @@ public class EjerciciosClase9 {
 
         }
         System.out.println("La suma total es: " + total);
-
-
-
-
-
-
-
-
-
-
 
 
 
