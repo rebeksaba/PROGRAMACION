@@ -50,12 +50,8 @@ public class EjerciciosClase11_Funciones {
         //System.out.println("Hola " + nombre + ", tienes " + edad + " años.");
 
 
-        Scanner scanner = sc();
-        System.out.print("Introduce tu nombre: ");
-        String nombre = scanner.nextLine();
-
-        ArrayList<Object> datosUsuario = cargarDatos();
-        System.out.println("Hola " + datosUsuario.get(0) + ", tienes " + datosUsuario.get(1) + " años.");
+        String[] datos = cargarDatos();
+        imprimirMensaje(datos[0], Integer.parseInt(datos[1]));
 
     }
 
@@ -81,25 +77,26 @@ public class EjerciciosClase11_Funciones {
     }
 
     //EJERCICIO 4//
-    public static Scanner sc (){
-        return new Scanner(System.in);
+    public static String[] cargarDatos(){
+        Scanner sc = new Scanner(System.in);
+        String[] datos = new String[2];
+
+        System.out.println("Introduce tu nombre: ");
+        datos[0] = sc.nextLine();
+
+        System.out.println("Introduce tu edad: ");
+        datos[1] = sc.nextLine();
+
+        return datos;
 
 
     }
 
-    public static ArrayList<Object> cargarDatos () {
-        Scanner scanner = new Scanner(System.in);
-        ArrayList<Object> datos = new ArrayList<>();
+    public static void imprimirMensaje (String nombre, int edad){
+        System.out.println("Hola " + nombre + " tiene " + edad + " años. ");
 
-        System.out.print("Introduce tu nombre: ");
-        String nombre = scanner.nextLine();
 
-        System.out.print("Introduce tu edad: ");
-        int edad = scanner.nextLine();
-        datos.add(nombre);
-        datos.add(edad);
-
-    } //REVISAR ESTE EJERCICIO
+    }
 
 
 
