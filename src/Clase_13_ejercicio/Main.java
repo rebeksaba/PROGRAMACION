@@ -9,8 +9,15 @@ public class Main {
         Vehiculo [] vehiculos = {SkodaFabia, CanyonUltimate};
 
         for (Vehiculo v: vehiculos){
-            System.out.println("Velocidad máxima: " + v.calcularVelocidadMaxima() + " km/h");
-            System.out.println("Consumo: " + v.consumo() + "l a los 100km");
+            if ( v instanceof Coche c){
+                System.out.println("Velocidad máxima: " + c.calcularVelocidadMaxima() + " km/h");
+                System.out.println("Consumo: " + c.consumo() + "l a los 100km");
+
+            }else if (v instanceof Bicicleta b){
+                System.out.println("Velocidad máxima: " + b.calcularVelocidadMaxima() + " km/h");
+                System.out.println("Consumo: " + b.consumo() + " No consume combustible. ");
+
+            }
 
         }
     }

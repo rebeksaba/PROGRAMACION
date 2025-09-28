@@ -14,7 +14,7 @@ public class Coche extends Vehiculo {
 
     @Override
     public double calcularVelocidadMaxima() {
-        return caballos * 2;
+        return caballos * 2.0;
     }
 
     @Override

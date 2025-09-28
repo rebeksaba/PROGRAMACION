@@ -14,7 +14,7 @@ public class Bicicleta extends Vehiculo {
 
     @Override
     public double calcularVelocidadMaxima(){
-        return numeroMarchas * 5;
+        return numeroMarchas * 5.0;
     }
 
     @Override
